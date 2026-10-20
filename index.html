@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>ClickApp CRM: producción audiovisual organizada del guion al llamado</title>
+    <meta name="description" content="Planifica escenas, jornadas y recursos en ClickApp CRM y genera tus reportes de producción desde un solo lugar.">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.documentElement.classList.add('js');
+        try {
+            var t = localStorage.getItem('ca-theme');
+            if (t) document.documentElement.dataset.theme = t
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <nav id="nav" aria-label="Principal">
+                <a href="https://deleclick.com/" class="logo">
+                    <img src="img/logo-clickapp.png" alt="Click App" class="logo-img logo-light">
+                    <img src="img/logo-dark.png" alt="Click App" class="logo-img logo-dark">
+                </a>
+
+                <div class="nav-right-group">
+                    <div class="nav-links">
+                        <a href="#flujo">Cómo funciona</a>
+                        <a href="#funciones">Funciones</a>
+                        <a href="#prueba">Reportes</a>
+                        <a href="#faq">Preguntas</a>
+                    </div>
+
+                    <div class="acciones-derecha">
+                        <a class="btn" href="#demo">Solicitar demo</a>
+                        <button class="tg" id="tg" type="button" aria-label="Cambiar a modo oscuro"><span aria-hidden="true">☾</span></button>
+                        <button class="mb" id="mb" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="top">
+        <div class="hero" role="region" aria-roledescription="carrusel" aria-label="Mensajes principales">
+            <h1 class="sr">Tu producción audiovisual, organizada del guion al llamado.</h1>
+            <button class="arr l" id="pv" type="button" aria-label="Anterior">‹</button>
+            <div>
+                <div class="sl">
+                    <p class="ht">Tu producción audiovisual, organizada del guion al llamado</p>
+                    <p class="sub">Planifica escenas, jornadas y recursos en ClickApp CRM y genera tus reportes de producción desde un solo lugar.</p><a class="btn o" href="#demo">Solicitar demostración</a></div>
+                <div class="sl">
+                    <p class="ht">Planifica escenas, jornadas y recursos en un solo sistema</p>
+                    <p class="sub">Te mostramos el sistema con un caso de producción de ejemplo.</p><a class="btn o" href="#flujo">Ver cómo funciona</a></div>
+                <div class="sl">
+                    <p class="ht">Menos hojas de cálculo. Más rodaje.</p>
+                    <p class="sub">ClickApp CRM centraliza tus clientes, proveedores y proyectos, y te ayuda a preparar escenas, jornadas, citaciones y reportes.</p><a class="btn o" href="#demo">Solicitar demostración</a></div>
+            </div>
+            <button class="arr r" id="nx" type="button" aria-label="Siguiente">›</button>
+            <div class="dots" id="dots"></div><button class="ps" id="ps" type="button" aria-label="Pausar carrusel">❚❚</button>
+        </div>
+
+        <section>
+            <div class="w">
+                <p class="eyebrow">El punto de partida</p>
+                <h2>Lo que hoy se pierde en el camino</h2>
+                <p class="lead">Si planificas con archivos sueltos, probablemente lo reconoces.</p>
+                <div class="pain">
+                    <p>Escenas en un documento, jornadas en una hoja de cálculo, costos en otra.</p>
+                    <p>Cada cambio obliga a rehacer la hoja de llamado.</p>
+                    <p>Nadie sabe cuál es la versión vigente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="flujo">
+            <div class="w">
+                <p class="eyebrow">Cómo funciona</p>
+                <h2>Del guion al llamado en 4 pasos</h2>
+                <p class="lead">El recorrido real de una producción, dentro de un solo sistema.</p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="ph">01<small></small>
+                            <img src="img/Cámara VR futurista de doble lente.png" alt="Espacio para captura real" class="imagen-captura">
+                        </div>
+                        <h3>Plan General</h3>
+                        <div class="meta">Paso 1 · Catálogo</div>
+                        <p>Reúne personal, equipos, servicios y logística en un catálogo.</p>
+                    </article>
+                    <article class="card">
+                        <div class="ph">02<small></small>
+                            <img src="img/Cámara VR futurista de doble lente.png" alt="Espacio para captura real" class="imagen-captura">
+                        </div>
+                        <h3>Plan Técnico</h3>
+                        <div class="meta">Paso 2 · Escenas y casting</div>
+                        <p>Registra cada escena, su clasificación Día/Noche, personajes y actores. El casting se asocia al proyecto y cada personaje recibe su día de participación.</p>
+                    </article>
+                    <article class="card">
+                        <div class="ph">03<small></small>
+                            <img src="img/Cámara VR futurista de doble lente.png" alt="Espacio para captura real" class="imagen-captura">
+                        </div>
+                        <h3>Plan de Trabajo</h3>
+                        <div class="meta">Paso 3 · Jornadas</div>
+                        <p>Organiza las jornadas, asigna escenas y recursos, y define citaciones.</p>
+                    </article>
+                    <article class="card">
+                        <div class="ph">04<small></small>
+                            <img src="img/Cámara VR futurista de doble lente.png" alt="Espacio para captura real" class="imagen-captura">
+                        </div>
+                        <h3>Reportes</h3>
+                        <div class="meta">Paso 4 · Revisión</div>
+                        <p>Genera Plan de Trabajo y Presupuesto Resumen. La Hoja de Llamado se arma automáticamente a partir del casting y los días de participación.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CALENDARIO DE JORNADAS -->
+        <section class="pg" id="prueba">
+            <div class="w">
+                <div class="calendario-jornadas-header">
+                    <p class="eyebrow">Plan de trabajo</p>
+                    <h2>Calendario de jornadas de rodaje</h2>
+                    <p class="lead">Organización de fechas, encargados y asignación de escenas por jornada de producción.</p>
+                </div>
+
+                <div class="calendario-grid-jornadas">
+                    <!-- Jornada 1 -->
+                    <div class="jornada-calendario-card">
+                        <div class="jornada-card-topbar">
+                            <span class="jornada-num">Jornada 01</span>
+                            <span class="jornada-fecha">12 Oct 2026</span>
+                        </div>
+                        <div class="jornada-card-body">
+                            <div class="jornada-encargado">Encargado: <strong>Carlos Montero</strong></div>
+                            <div class="jornada-citacion-bloque">Citación: 7:00 a. m. - 5:00 p. m.</div>
+                            <div class="jornada-escenas-lista">
+                                <span class="badge-escena dia">☀ Escena 1 · Día</span>
+                                <span class="badge-escena dia">☀ Escena 2 · Día</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jornada 2 -->
+                    <div class="jornada-calendario-card">
+                        <div class="jornada-card-topbar">
+                            <span class="jornada-num">Jornada 02</span>
+                            <span class="jornada-fecha">13 Oct 2026</span>
+                        </div>
+                        <div class="jornada-card-body">
+                            <div class="jornada-encargado">Encargado: <strong>Ana Sofía Solís</strong></div>
+                            <div class="jornada-citacion-bloque">Citación: 2:00 p. m. - 12:00 a. m.</div>
+                            <div class="jornada-escenas-lista">
+                                <span class="badge-escena noche">☾ Escena 3 · Noche</span>
+                                <span class="badge-escena dia">☀ Escena 4 · Día</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jornada 3 -->
+                    <div class="jornada-calendario-card">
+                        <div class="jornada-card-topbar">
+                            <span class="jornada-num">Jornada 03</span>
+                            <span class="jornada-fecha">14 Oct 2026</span>
+                        </div>
+                        <div class="jornada-card-body">
+                            <div class="jornada-encargado">Encargado: <strong>Carlos Montero</strong></div>
+                            <div class="jornada-citacion-bloque">Citación: 7:00 a. m. - 4:00 p. m.</div>
+                            <div class="jornada-escenas-lista">
+                                <span class="badge-escena noche">☾ Escena 5 · Noche</span>
+                                <span class="badge-escena dia">☀ Escena 6 · Día</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FUNCIONES (Con clase para opcional fondo de imagen) -->
+        <section id="funciones" class="seccion-con-fondo-imagen">
+            <div class="w">
+                <p class="eyebrow">Funciones</p>
+                <h2>Todo para preparar el rodaje</h2>
+                <p class="lead">Seis funciones documentadas, listas para tu próxima producción.</p>
+                <div class="cards c3">
+                    <article class="card">
+                        <h3>Catálogo de recursos</h3>
+                        <p>Personal, arte y vestuario, equipos, transporte, servicios y logística.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Escenas organizadas</h3>
+                        <p>Nombre, resumen, descripción y categoría Día/Noche.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Casting por escena</h3>
+                        <p>Personajes y actores relacionados.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Jornadas de rodaje</h3>
+                        <p>Fecha, estado y encargado por día.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Citaciones claras</h3>
+                        <p>Horarios y notas por recurso o persona, por ejemplo “7:00 a. m. a 5:00 p. m.”.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Presupuesto resumen</h3>
+                        <p>Costos por cantidad y precio unitario, agrupados por área.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="sistema">
+            <div class="w sys">
+                <div>
+                    <p class="eyebrow">Un solo sistema</p>
+                    <h2>De la venta al rodaje</h2>
+                    <p class="lead" style="margin:0">Clientes, proveedores, ventas, compras y proyectos audiovisuales están vinculados dentro de la misma plataforma. También existen automatizaciones, aprobaciones, notificaciones y permisos por perfil; te mostramos el detalle en la demo.</p>
+                </div>
+                <ol class="chain" aria-label="Clientes, ventas, compras, proyectos y producción vinculados">
+                    <li>Clientes</li>
+                    <li>Ventas</li>
+                    <li>Compras</li>
+                    <li>Proyectos</li>
+                    <li>Producción</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PERFILES (Con clase para opcional fondo de imagen) -->
+        <section id="perfiles" class="seccion-con-fondo-imagen">
+            <div class="w">
+                <p class="eyebrow">Para quién es</p>
+                <h2>Cada perfil, su parte del flujo</h2>
+                <p class="lead">Beneficios basados en las funciones documentadas.</p>
+                <div class="cards c3">
+                    <article class="card">
+                        <h3>Productores</h3>
+                        <div class="meta">Jefes de producción</div>
+                        <p>Controla jornadas, recursos y el presupuesto resumen antes de rodar.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Asistentes y coordinadores</h3>
+                        <div class="meta">Dirección y coordinación</div>
+                        <p>Arma el plan de trabajo y genera la Hoja de Llamado a partir del casting.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Gerentes</h3>
+                        <div class="meta">Productoras y agencias</div>
+                        <p>Clientes, proveedores, ventas, compras y proyectos en una misma plataforma.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="faq">
+            <div class="w">
+                <p class="eyebrow">Preguntas</p>
+                <h2>Preguntas frecuentes</h2>
+                <details>
+                    <summary>¿Qué necesito para empezar?</summary>
+                    <p>Te lo explicamos en la demo.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo organizar varias producciones?</summary>
+                    <p>Te lo explicamos en la demo.</p>
+                </details>
+                <details>
+                    <summary>¿Qué reportes genera?</summary>
+                    <p>Plan de Trabajo, Hoja de Llamado y Presupuesto Resumen.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo se registran las citaciones?</summary>
+                    <p>Al asignar recursos a cada jornada defines horarios y notas, por ejemplo “7:00 a. m. a 5:00 p. m.”.</p>
+                </details>
+                <details>
+                    <summary>¿Los usuarios tienen distintos permisos?</summary>
+                    <p>Existen permisos por perfil. El detalle te lo explicamos en la demo.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DEMO CON FORMULARIO IZQUIERDA E IMAGEN NÍTIDA + SOMBRA A LA DERECHA -->
+        <section id="demo">
+            <div class="w">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <!-- Columna Izquierda: Formulario -->
+                    <div>
+                        <p class="eyebrow">Demostración</p>
+                        <h2>¿Listo para ordenar tu próxima producción?</h2>
+                        <p class="lead">Agenda una demo y recorremos el flujo completo contigo.</p>
+                        <form id="f" novalidate>
+                            <label>Nombre<input name="n" required autocomplete="name"></label>
+                            <label>Correo<input name="e" type="email" required autocomplete="email"></label>
+                            <label>Teléfono (opcional)<input name="t" type="tel" autocomplete="tel"></label>
+                            <label>Empresa<input name="c" required autocomplete="organization"></label>
+                            <label>Tipo de organización<select name="o"><option>Productora</option><option>Agencia</option><option>Estudio</option><option>Otro</option></select></label>
+                            <label>Mensaje breve<textarea name="m" rows="3"></textarea></label>
+                            <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            <label class="chk"><input type="checkbox" required> <span>Acepto el tratamiento de mis datos según la <a href="#">política de privacidad</a>.</span></label>
+                            <button class="btn" type="submit">Solicitar demostración</button>
+                            <div id="err" role="alert" style="color:var(--ac);font-weight:600"></div>
+                        </form>
+                        <div id="ok" role="status">Gracias, te contactaremos para coordinar tu demostración.</div>
+                    </div>
+
+                    <!-- Columna Derecha: Imagen nítida con sombra abajo -->
+                    <div class="columna-imagen-lateral-blur"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w">Click App · contacto · redes · política de privacidad · términos</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
